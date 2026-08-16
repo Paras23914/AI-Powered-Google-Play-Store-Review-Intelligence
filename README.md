@@ -1523,9 +1523,25 @@ The project combines concepts from:
 
 ---
 
-# Authors
+## Authors
 
-**Paras Sharma**
+### Paras Sharma
+Project Lead & ML/Full-Stack Developer
+
+- Data preprocessing & analysis
+- Machine Learning & DeBERTa pipeline
+- Qwen & Gemini integration
+- FastAPI backend
+- React dashboard
+- Model evaluation
+
+### Devam Dharmendrabhai Shah
+Frontend Developer
+
+- React frontend
+- Dashboard UI
+- Data visualization
+- UI components
 
 Academic Data Mining Project.
 
