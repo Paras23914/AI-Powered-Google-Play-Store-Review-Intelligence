@@ -1526,7 +1526,6 @@ The project combines concepts from:
 # Authors
 
 **Paras Sharma**
-**Devam Dharmendrabhai Shah**
 
 Academic Data Mining Project.
 
@@ -1538,4 +1537,3 @@ This repository is provided for academic and portfolio purposes.
 
 Please contact the authors before redistributing substantial portions of the implementation or using the project commercially.
 
-```
