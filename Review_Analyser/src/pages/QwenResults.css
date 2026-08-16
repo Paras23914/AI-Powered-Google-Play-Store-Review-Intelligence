@@ -1,0 +1,1355 @@
+/* =========================================================
+   QWEN RESULTS
+========================================================= */
+
+.qwen-results-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 28px 70px;
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.qwen-results-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+
+}
+
+
+.qwen-results-back {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+}
+
+
+.qwen-results-back:hover {
+
+    color: var(--text);
+
+}
+
+
+.qwen-download-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 17px;
+
+    border: 1px solid var(--secondary);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--secondary);
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.qwen-download-button:hover:not(:disabled) {
+
+    transform: translateY(-1px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.qwen-download-button:disabled {
+
+    opacity: .55;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.qwen-results-hero {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.qwen-results-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 14px;
+
+    margin-bottom: 17px;
+
+    border-radius: 999px;
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.qwen-results-hero h1 {
+
+    margin: 0;
+
+    font-size: 2.8rem;
+
+    font-weight: 800;
+
+}
+
+
+.qwen-results-hero p {
+
+    margin: 10px 0 0;
+
+    color: var(--text-light);
+
+}
+
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+
+.qwen-results-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.qwen-stat-card {
+
+    padding: 22px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.qwen-stat-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+}
+
+
+.qwen-stat-card span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+}
+
+
+.qwen-stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--text);
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.qwen-result-section {
+
+    margin-bottom: 35px;
+
+}
+
+
+.qwen-section-heading span,
+.qwen-table-heading span:first-child {
+
+    color: var(--secondary);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.qwen-section-heading h2,
+.qwen-table-heading h2 {
+
+    margin: 3px 0 18px;
+
+    font-size: 1.7rem;
+
+}
+
+
+/* =========================================================
+   SENTIMENT
+========================================================= */
+
+.qwen-sentiment-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.qwen-sentiment-card {
+
+    padding: 24px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    cursor: pointer;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+.qwen-sentiment-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.qwen-sentiment-card span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+}
+
+
+.qwen-sentiment-card strong {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: var(--text);
+
+    font-size: 30px;
+
+}
+
+
+.qwen-sentiment-card.positive {
+
+    border-left: 4px solid var(--success);
+
+}
+
+
+.qwen-sentiment-card.neutral {
+
+    border-left: 4px solid var(--warning);
+
+}
+
+
+.qwen-sentiment-card.negative {
+
+    border-left: 4px solid var(--danger);
+
+}
+
+
+/* =========================================================
+   THEMES
+========================================================= */
+
+.qwen-theme-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+}
+
+
+.qwen-theme {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    background: var(--surface);
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+}
+
+
+.qwen-theme strong {
+
+    color: var(--text);
+
+}
+
+
+.qwen-theme:hover,
+.qwen-theme.active {
+
+    border-color: var(--secondary);
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+}
+
+/* =========================================================
+   RATING DISTRIBUTION
+========================================================= */
+
+.qwen-rating-distribution {
+
+    padding: 22px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.qwen-rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        55px 1fr 70px 70px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.qwen-rating-row:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.qwen-rating-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.qwen-rating-label svg {
+
+    color: var(--warning);
+
+}
+
+
+.qwen-rating-track {
+
+    height: 9px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: var(--background);
+
+}
+
+
+.qwen-rating-bar {
+
+    height: 100%;
+
+    min-width: 2px;
+
+    border-radius: inherit;
+
+    background: var(--secondary);
+
+    transition: width .4s ease;
+
+}
+
+
+.qwen-rating-count {
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-align: right;
+
+}
+
+
+.qwen-rating-percent {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    text-align: right;
+
+}
+
+
+/* =========================================================
+   SENTIMENT PERCENTAGE
+========================================================= */
+
+.qwen-sentiment-card small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   PRIORITY ISSUES
+========================================================= */
+
+.qwen-priority-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+
+}
+
+
+.qwen-priority-card {
+
+    display: grid;
+
+    grid-template-columns:
+        48px 1fr auto;
+
+    align-items: center;
+
+    gap: 14px;
+
+    width: 100%;
+
+    padding: 18px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    text-align: left;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.qwen-priority-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color: var(--secondary);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.qwen-priority-number {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.qwen-priority-content h3 {
+
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+}
+
+
+.qwen-priority-content p {
+
+    margin: 3px 0 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.qwen-priority-card > strong {
+
+    color: var(--secondary);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   REPRESENTATIVE FEEDBACK
+========================================================= */
+
+.qwen-feedback-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.qwen-feedback-card {
+
+    padding: 21px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+.qwen-feedback-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.qwen-feedback-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.qwen-feedback-review {
+
+    margin: 0 0 18px;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+}
+
+
+.qwen-feedback-summary,
+.qwen-feedback-reason {
+
+    padding: 12px 14px;
+
+    margin-top: 10px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--background);
+
+}
+
+
+.qwen-feedback-summary strong,
+.qwen-feedback-reason strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--text);
+
+    font-size: 11px;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+}
+
+
+.qwen-feedback-summary p,
+.qwen-feedback-reason p {
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   DOWNLOAD LABEL
+========================================================= */
+
+.qwen-download-label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--secondary);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   MODEL STAT SMALL TEXT
+========================================================= */
+
+.qwen-stat-card strong small {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+}
+/* =========================================================
+   TABLE HEADING
+========================================================= */
+
+.qwen-table-heading {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+}
+
+
+.qwen-result-count {
+
+    margin-bottom: 18px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.qwen-filters {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 190px 190px;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.qwen-search {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+}
+
+
+.qwen-search input {
+
+    width: 100%;
+
+    padding: 11px 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--text);
+
+}
+
+
+.qwen-search input::placeholder {
+
+    color: var(--muted);
+
+}
+
+
+.qwen-filters select {
+
+    padding: 11px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    outline: none;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.qwen-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.qwen-results-table {
+
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: collapse;
+
+}
+
+
+.qwen-results-table th {
+
+    padding: 14px 15px;
+
+    text-align: left;
+
+    background: var(--background);
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+.qwen-results-table td {
+
+    padding: 15px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    vertical-align: top;
+
+}
+
+
+.qwen-results-table tbody tr:hover {
+
+    background: var(--surface-hover);
+
+}
+
+
+.qwen-review-content {
+
+    min-width: 260px;
+
+    max-width: 350px;
+
+    color: var(--text) !important;
+
+    line-height: 1.55;
+
+}
+
+
+.qwen-reason {
+
+    min-width: 180px;
+
+}
+
+
+/* =========================================================
+   TABLE PILLS
+========================================================= */
+
+.qwen-rating {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+    font-weight: 700;
+
+}
+
+
+.qwen-sentiment-pill,
+.qwen-theme-pill {
+
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+.qwen-sentiment-pill.positive {
+
+    background: rgba(34, 197, 94, .12);
+
+    color: var(--success);
+
+}
+
+
+.qwen-sentiment-pill.neutral {
+
+    background: rgba(245, 158, 11, .12);
+
+    color: var(--warning);
+
+}
+
+
+.qwen-sentiment-pill.negative {
+
+    background: rgba(239, 68, 68, .12);
+
+    color: var(--danger);
+
+}
+
+
+.qwen-theme-pill {
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+}
+
+
+/* =========================================================
+   NO RESULTS
+========================================================= */
+
+.qwen-no-results {
+
+    padding: 45px !important;
+
+    text-align: center !important;
+
+    color: var(--muted) !important;
+
+}
+
+
+/* =========================================================
+   DOWNLOAD FOOTER
+========================================================= */
+
+.qwen-download-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 27px;
+
+    margin-top: 10px;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--secondary-soft);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.qwen-download-section h2 {
+
+    margin: 0 0 5px;
+
+    font-size: 1.35rem;
+
+}
+
+
+.qwen-download-section p {
+
+    margin: 0;
+
+    max-width: 650px;
+
+    font-size: 13px;
+
+}
+
+
+.qwen-download-button.large {
+
+    flex-shrink: 0;
+
+    padding: 13px 18px;
+
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.qwen-results-empty {
+
+    max-width: 500px;
+
+    margin: 120px auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.qwen-results-empty svg {
+
+    color: var(--secondary);
+
+}
+
+
+.qwen-results-empty h2 {
+
+    margin: 15px 0 5px;
+
+}
+
+
+.qwen-results-empty p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.qwen-results-empty button {
+
+    padding: 11px 17px;
+
+    border: none;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--secondary);
+
+    color: white;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .qwen-priority-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .qwen-feedback-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .qwen-results-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .qwen-filters {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .qwen-download-section {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .qwen-rating-row {
+
+        grid-template-columns:
+            45px 1fr 50px;
+
+    }
+
+
+    .qwen-rating-percent {
+
+        display: none;
+
+    }
+
+
+    .qwen-priority-card {
+
+        grid-template-columns:
+            42px 1fr auto;
+
+        padding: 15px;
+
+    }
+
+
+    .qwen-feedback-card {
+
+        padding: 17px;
+
+    }
+    .qwen-results-container {
+
+        padding:
+            25px 16px 50px;
+
+    }
+
+
+    .qwen-results-top {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .qwen-results-hero h1 {
+
+        font-size: 2.15rem;
+
+    }
+
+
+    .qwen-results-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .qwen-sentiment-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

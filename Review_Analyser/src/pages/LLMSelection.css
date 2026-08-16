@@ -1,0 +1,418 @@
+/* =========================================================
+   LLM SELECTION
+========================================================= */
+
+.llm-selection-page {
+
+    width: min(1100px, 92%);
+
+    margin: 0 auto;
+
+    padding: 42px 0 80px;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.page-back-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: var(--surface);
+
+    color: var(--text-light);
+
+    font-size: .9rem;
+
+    font-weight: 500;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.page-back-button:hover {
+
+    color: var(--text);
+
+    background: var(--surface-hover);
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.llm-selection-header {
+
+    text-align: center;
+
+    max-width: 720px;
+
+    margin: 65px auto 55px;
+
+}
+
+.llm-selection-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+}
+
+.llm-selection-header h1 {
+
+    margin: 20px 0 14px;
+
+    font-size: clamp(2.3rem, 5vw, 3.5rem);
+
+    letter-spacing: -.035em;
+
+}
+
+.llm-selection-header p {
+
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    font-size: 1.05rem;
+
+}
+
+
+/* =========================================================
+   MODEL OPTIONS
+========================================================= */
+
+.llm-options {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.llm-card {
+
+    position: relative;
+
+    padding: 42px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-md);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border var(--transition);
+
+}
+
+.llm-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.llm-card-icon {
+
+    width: 68px;
+
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+.qwen-card .llm-card-icon {
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+}
+
+.gemini-card .llm-card-icon {
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.llm-card-label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    color: var(--muted);
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.llm-card h2 {
+
+    margin-bottom: 14px;
+
+    font-size: 2rem;
+
+}
+
+.llm-card p {
+
+    font-size: .98rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.llm-features {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    margin: 25px 0 30px;
+
+}
+
+.llm-features span {
+
+    color: var(--text-light);
+
+    font-size: .9rem;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.llm-select-button {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: .95rem;
+
+    font-weight: 600;
+
+}
+
+.qwen-button {
+
+    background: var(--secondary);
+
+}
+
+.qwen-button:hover {
+
+    background: var(--secondary);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.gemini-button {
+
+    background: var(--primary);
+
+}
+
+.gemini-button:hover {
+
+    background: var(--primary);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* =========================================================
+   INFO
+========================================================= */
+
+.llm-selection-info {
+
+    max-width: 800px;
+
+    margin: 38px auto 0;
+
+    padding: 20px 24px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+    color: var(--text-light);
+
+}
+
+.llm-selection-info svg {
+
+    flex-shrink: 0;
+
+    color: var(--primary);
+
+    margin-top: 2px;
+
+}
+
+.llm-selection-info strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--text);
+
+}
+
+.llm-selection-info p {
+
+    margin: 0;
+
+    font-size: .9rem;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .llm-options {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .llm-selection-header {
+
+        margin-top: 45px;
+
+    }
+
+    .llm-card {
+
+        padding: 30px;
+
+    }
+
+}

@@ -1,0 +1,918 @@
+/* =========================================================
+   GEMINI ANALYSIS
+========================================================= */
+
+.gemini-container {
+
+    width: min(1180px, 94%);
+
+    margin: 0 auto;
+
+    padding: 35px 0 70px;
+
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.gemini-back {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 28px;
+
+    padding: 9px 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    font-size: 13px;
+
+}
+
+
+.gemini-back:hover {
+
+    border-color: var(--primary);
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.gemini-hero {
+
+    margin-bottom: 30px;
+
+}
+
+
+.gemini-hero-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 12px;
+
+    border-radius: 999px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-title {
+
+    margin: 14px 0 8px;
+
+}
+
+
+.gemini-subtitle {
+
+    max-width: 760px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.gemini-analysis-card {
+
+    width: 100%;
+
+    padding: 38px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-md);
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   UPLOAD
+========================================================= */
+
+.gemini-upload-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 68px;
+
+    height: 68px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 18px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+
+.gemini-analysis-card h2 {
+
+    margin: 0 0 8px;
+
+}
+
+
+.gemini-card-description {
+
+    max-width: 600px;
+
+    margin: 0 auto 22px;
+
+    font-size: 14px;
+
+}
+
+
+.gemini-card-description strong {
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.gemini-choose-button,
+.gemini-analyze-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: var(--radius-sm);
+
+    font-weight: 700;
+
+}
+
+
+.gemini-choose-button {
+
+    padding: 11px 17px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+}
+
+
+.gemini-choose-button:hover {
+
+    border-color: var(--primary);
+
+    background: var(--primary-soft);
+
+}
+
+
+.gemini-analyze-button {
+
+    display: flex;
+
+    width: min(420px, 100%);
+
+    margin: 18px auto 0;
+
+    padding: 13px 18px;
+
+    border: none;
+
+    background: var(--primary);
+
+    color: white;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-analyze-button:hover:not(:disabled) {
+
+    transform: translateY(-1px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.gemini-analyze-button:disabled {
+
+    opacity: .55;
+
+}
+
+
+/* =========================================================
+   SELECTED FILE
+========================================================= */
+
+.gemini-file {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: fit-content;
+
+    max-width: 100%;
+
+    margin: 15px auto 0;
+
+    padding: 9px 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-size: 13px;
+
+}
+
+
+.gemini-file svg {
+
+    flex-shrink: 0;
+
+    color: var(--primary);
+
+}
+
+
+/* =========================================================
+   REQUIREMENTS
+========================================================= */
+
+.gemini-requirements {
+
+    max-width: 600px;
+
+    margin: 25px auto 0;
+
+    padding: 15px 18px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--background);
+
+    text-align: left;
+
+}
+
+
+.gemini-requirements > strong {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--text);
+
+    font-size: 12px;
+
+}
+
+
+.gemini-requirements ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+
+}
+
+
+.gemini-requirements li {
+
+    margin: 4px 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+}
+
+
+.gemini-requirements li strong {
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   PROCESSING
+========================================================= */
+
+.gemini-processing {
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+}
+
+
+.gemini-processing-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 20px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+
+.gemini-processing-label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.gemini-processing > h2 {
+
+    margin-bottom: 7px;
+
+}
+
+
+.gemini-processing > p {
+
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.gemini-progress-section {
+
+    margin-top: 28px;
+
+    padding: 18px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--background);
+
+    text-align: left;
+
+}
+
+
+.gemini-progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+.gemini-progress-header span {
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.gemini-progress-header strong {
+
+    color: var(--primary);
+
+    font-size: 13px;
+
+}
+
+
+.gemini-progress-track {
+
+    width: 100%;
+
+    height: 10px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: var(--surface);
+
+}
+
+
+.gemini-progress-bar {
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: var(--primary);
+
+    transition: width .4s ease;
+
+}
+
+
+.gemini-progress-percent {
+
+    margin-top: 7px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    text-align: right;
+
+}
+
+
+/* =========================================================
+   LIVE STATUS
+========================================================= */
+
+.gemini-live-status {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+}
+
+
+.gemini-live-status svg {
+
+    color: var(--primary);
+
+}
+
+
+/* =========================================================
+   PROCESSING INFO
+========================================================= */
+
+.gemini-processing-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+.gemini-processing-info > div {
+
+    padding: 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+}
+
+
+.gemini-processing-info span {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+}
+
+
+.gemini-processing-info strong {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   BATCH LIST
+========================================================= */
+
+.gemini-batch-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 9px;
+
+    margin-top: 20px;
+
+}
+
+
+.gemini-batch {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 11px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+}
+
+
+.gemini-batch > span:first-of-type {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: var(--background);
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-batch.completed {
+
+    border-color: var(--primary);
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+
+.gemini-batch.completed svg {
+
+    flex-shrink: 0;
+
+}
+
+
+.gemini-batch small {
+
+    margin-left: auto;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.gemini-error {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 18px;
+
+    border: 1px solid var(--danger);
+
+    border-radius: var(--radius);
+
+    background: rgba(239, 68, 68, .07);
+
+    color: var(--danger);
+
+    text-align: left;
+
+}
+
+
+.gemini-error > div {
+
+    flex: 1;
+
+}
+
+
+.gemini-error strong {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+}
+
+
+.gemini-error p {
+
+    margin: 4px 0 12px;
+
+    font-size: 13px;
+
+}
+
+
+.gemini-error button {
+
+    padding: 8px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.gemini-spin {
+
+    animation:
+        gemini-spin 1s linear infinite;
+
+}
+
+
+@keyframes gemini-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.gemini-features {
+
+    margin-top: 28px;
+
+}
+
+
+.gemini-features .feature-card {
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+.gemini-features .feature-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .gemini-analysis-card {
+
+        padding: 28px 22px;
+
+    }
+
+
+    .gemini-batch-list {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .gemini-container {
+
+        width: 92%;
+
+        padding-top: 25px;
+
+    }
+
+
+    .gemini-title {
+
+        font-size: 2.25rem;
+
+    }
+
+
+    .gemini-analysis-card {
+
+        padding: 24px 16px;
+
+    }
+
+
+    .gemini-processing-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gemini-batch-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gemini-file {
+
+        max-width: 100%;
+
+        overflow: hidden;
+
+    }
+
+}

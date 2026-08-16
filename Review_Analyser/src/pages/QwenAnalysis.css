@@ -1,0 +1,856 @@
+/* =========================================================
+   QWEN PAGE
+========================================================= */
+
+.qwen-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 28px 70px;
+
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.qwen-back {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 0;
+
+    margin-bottom: 30px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+}
+
+
+.qwen-back:hover {
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.qwen-hero {
+
+    text-align: center;
+
+    max-width: 780px;
+
+    margin: 0 auto 40px;
+
+}
+
+
+.qwen-hero-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 14px;
+
+    border-radius: 999px;
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+.qwen-title {
+
+    margin: 0;
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+
+}
+
+
+.qwen-subtitle {
+
+    max-width: 700px;
+
+    margin: 15px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.qwen-analysis-card {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 42px;
+
+    text-align: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* =========================================================
+   UPLOAD
+========================================================= */
+
+.qwen-upload-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: var(--radius);
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+}
+
+
+.qwen-analysis-card h2 {
+
+    margin: 0 0 10px;
+
+}
+
+
+.qwen-card-description {
+
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    color: var(--text-light);
+
+}
+
+
+.qwen-card-description strong {
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.qwen-choose-button,
+.qwen-analyze-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: var(--radius-sm);
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+}
+
+
+.qwen-choose-button {
+
+    margin-top: 24px;
+
+    padding: 12px 20px;
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.qwen-choose-button:hover {
+
+    background: var(--surface-hover);
+
+    border-color: var(--secondary);
+
+}
+
+
+.qwen-analyze-button {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 14px 20px;
+
+    border: 1px solid var(--secondary);
+
+    background: var(--secondary);
+
+    color: white;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.qwen-analyze-button:hover:not(:disabled) {
+
+    transform: translateY(-1px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.qwen-analyze-button:disabled {
+
+    opacity: .5;
+
+}
+
+
+/* =========================================================
+   SELECTED FILE
+========================================================= */
+
+.qwen-file {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 18px;
+
+    padding: 11px 15px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--secondary-soft);
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+.qwen-file span {
+
+    max-width: 520px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   REQUIREMENTS
+========================================================= */
+
+.qwen-requirements {
+
+    margin-top: 28px;
+
+    padding: 18px;
+
+    text-align: left;
+
+    border-radius: var(--radius);
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.qwen-requirements strong {
+
+    color: var(--text);
+
+}
+
+
+.qwen-requirements ul {
+
+    margin: 9px 0 0;
+
+    padding-left: 20px;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   PROCESSING
+========================================================= */
+
+.qwen-processing {
+
+    text-align: center;
+
+}
+
+
+.qwen-processing-icon {
+
+    width: 74px;
+
+    height: 74px;
+
+    margin: 0 auto 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: var(--radius);
+
+    background: var(--secondary-soft);
+
+    color: var(--secondary);
+
+}
+
+
+.qwen-processing-label {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--secondary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.qwen-processing > p {
+
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    color: var(--text-light);
+
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.qwen-progress-section {
+
+    margin-top: 32px;
+
+    text-align: left;
+
+}
+
+
+.qwen-progress-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+
+    color: var(--text-light);
+
+}
+
+
+.qwen-progress-header strong {
+
+    color: var(--text);
+
+}
+
+
+.qwen-progress-track {
+
+    width: 100%;
+
+    height: 10px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.qwen-progress-bar {
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: var(--secondary);
+
+    transition: width .45s ease;
+
+}
+
+
+.qwen-progress-percent {
+
+    display: block;
+
+    margin-top: 7px;
+
+    text-align: right;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   LIVE STATUS
+========================================================= */
+
+.qwen-live-status {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 22px;
+
+    padding: 12px 15px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   PROCESSING INFO
+========================================================= */
+
+.qwen-processing-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+.qwen-processing-info > div {
+
+    padding: 14px;
+
+    border-radius: var(--radius);
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.qwen-processing-info span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.qwen-processing-info strong {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   BATCH LIST
+========================================================= */
+
+.qwen-batch-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 8px;
+
+    margin-top: 22px;
+
+    text-align: left;
+
+}
+
+
+.qwen-batch {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 12px;
+
+    border-radius: var(--radius-sm);
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.qwen-batch > span:first-of-type {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: var(--background);
+
+    font-size: 10px;
+
+}
+
+
+.qwen-batch small {
+
+    margin-left: auto;
+
+    color: var(--success);
+
+}
+
+
+.qwen-batch.completed {
+
+    border-color: var(--secondary);
+
+    background: var(--secondary-soft);
+
+    color: var(--text);
+
+}
+
+
+.qwen-batch.completed svg {
+
+    color: var(--secondary);
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.qwen-error {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 20px;
+
+    text-align: left;
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    border: 1px solid var(--danger);
+
+}
+
+
+.qwen-error > svg {
+
+    flex-shrink: 0;
+
+    color: var(--danger);
+
+}
+
+
+.qwen-error strong {
+
+    color: var(--text);
+
+}
+
+
+.qwen-error p {
+
+    margin: 5px 0 13px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+}
+
+
+.qwen-error button {
+
+    padding: 8px 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.qwen-error button:hover {
+
+    background: var(--surface-hover);
+
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.qwen-features {
+
+    margin-top: 30px;
+
+}
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.qwen-spin {
+
+    animation:
+        qwen-spin 1s linear infinite;
+
+}
+
+
+@keyframes qwen-spin {
+
+    from {
+
+        transform:
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .qwen-container {
+
+        padding:
+            25px 16px 50px;
+
+    }
+
+
+    .qwen-title {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .qwen-subtitle {
+
+        font-size: .95rem;
+
+    }
+
+
+    .qwen-analysis-card {
+
+        padding: 28px 20px;
+
+    }
+
+
+    .qwen-processing-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .qwen-batch-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

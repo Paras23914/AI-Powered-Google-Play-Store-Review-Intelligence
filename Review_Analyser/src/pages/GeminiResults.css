@@ -1,0 +1,1284 @@
+.gemini-results-container {
+
+    width: min(1400px, 94%);
+
+    margin: 0 auto;
+
+    padding: 30px 0 70px;
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.gemini-results-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+
+}
+
+
+.gemini-results-back {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+}
+
+
+.gemini-results-back:hover {
+
+    border-color: var(--primary);
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.gemini-results-hero {
+
+    margin-bottom: 30px;
+
+}
+
+
+.gemini-results-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 12px;
+
+    border-radius: 999px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-results-hero h1 {
+
+    margin: 15px 0 8px;
+
+}
+
+
+.gemini-results-hero p {
+
+    max-width: 760px;
+
+    margin: 0;
+
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.gemini-results-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.gemini-stat-card {
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-stat-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 44px;
+
+    height: 44px;
+
+    margin-bottom: 13px;
+
+    border-radius: 12px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+
+.gemini-stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.gemini-stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--text);
+
+    font-size: 23px;
+
+}
+
+
+.gemini-stat-card strong small {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.gemini-result-section {
+
+    margin-top: 30px;
+
+}
+
+
+.gemini-section-heading {
+
+    margin-bottom: 16px;
+
+}
+
+
+.gemini-section-heading > span {
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.1px;
+
+}
+
+
+.gemini-section-heading h2 {
+
+    margin: 4px 0;
+
+}
+
+
+.gemini-section-heading p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.gemini-rating-distribution {
+
+    padding: 22px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        55px 1fr 65px 65px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.gemini-rating-row:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.gemini-rating-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-rating-label svg {
+
+    color: var(--warning);
+
+}
+
+
+.gemini-rating-track {
+
+    height: 9px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: var(--background);
+
+}
+
+
+.gemini-rating-bar {
+
+    height: 100%;
+
+    min-width: 2px;
+
+    border-radius: inherit;
+
+    background: var(--primary);
+
+    transition: width .4s ease;
+
+}
+
+
+.gemini-rating-count {
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-align: right;
+
+}
+
+
+.gemini-rating-percent {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    text-align: right;
+
+}
+
+
+/* =========================================================
+   SENTIMENT
+========================================================= */
+
+.gemini-sentiment-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.gemini-sentiment-card {
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    text-align: left;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-sentiment-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.gemini-sentiment-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-sentiment-card strong {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--text);
+
+    font-size: 28px;
+
+}
+
+
+.gemini-sentiment-card small {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   THEMES
+========================================================= */
+
+.gemini-theme-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+}
+
+
+.gemini-theme {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    background: var(--surface);
+
+    color: var(--text);
+
+}
+
+
+.gemini-theme strong {
+
+    color: var(--primary);
+
+}
+
+
+.gemini-theme small {
+
+    color: var(--muted);
+
+}
+
+
+.gemini-theme:hover,
+.gemini-theme.active {
+
+    border-color: var(--primary);
+
+    background: var(--primary-soft);
+
+}
+
+
+/* =========================================================
+   PRIORITY
+========================================================= */
+
+.gemini-priority-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+
+}
+
+
+.gemini-priority-card {
+
+    display: grid;
+
+    grid-template-columns:
+        48px 1fr auto;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    text-align: left;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-priority-card:hover {
+
+    border-color: var(--primary);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.gemini-priority-number {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 12px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+.gemini-priority-content h3 {
+
+    margin: 0;
+
+    font-size: 15px;
+
+}
+
+
+.gemini-priority-content p {
+
+    margin: 3px 0 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.gemini-priority-card > strong {
+
+    color: var(--primary);
+
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.gemini-feedback-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.gemini-feedback-card {
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-feedback-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.gemini-feedback-review {
+
+    margin: 0 0 16px;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+}
+
+
+.gemini-feedback-summary,
+.gemini-feedback-reason {
+
+    padding: 12px 14px;
+
+    margin-top: 10px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--background);
+
+}
+
+
+.gemini-feedback-summary strong,
+.gemini-feedback-reason strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--text);
+
+    font-size: 10px;
+
+    letter-spacing: .6px;
+
+    text-transform: uppercase;
+
+}
+
+
+.gemini-feedback-summary p,
+.gemini-feedback-reason p {
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   PILLS
+========================================================= */
+
+.gemini-theme-pill,
+.gemini-sentiment-pill {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-theme-pill {
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+
+.gemini-sentiment-pill.positive {
+
+    background: rgba(34, 197, 94, .12);
+
+    color: var(--success);
+
+}
+
+
+.gemini-sentiment-pill.neutral {
+
+    background: rgba(245, 158, 11, .12);
+
+    color: var(--warning);
+
+}
+
+
+.gemini-sentiment-pill.negative {
+
+    background: rgba(239, 68, 68, .12);
+
+    color: var(--danger);
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.gemini-table-heading {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.gemini-table-heading > div > span {
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.gemini-table-heading h2 {
+
+    margin: 4px 0 0;
+
+}
+
+
+.gemini-result-count {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.gemini-filters {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.gemini-search {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex: 1;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+}
+
+
+.gemini-search svg {
+
+    color: var(--muted);
+
+}
+
+
+.gemini-search input {
+
+    width: 100%;
+
+    padding: 11px 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--text);
+
+}
+
+
+.gemini-filters select {
+
+    min-width: 150px;
+
+    padding: 10px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+}
+
+
+.gemini-table-wrapper {
+
+    overflow-x: auto;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-results-table {
+
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: collapse;
+
+}
+
+
+.gemini-results-table th {
+
+    padding: 13px 14px;
+
+    border-bottom: 1px solid var(--border);
+
+    background: var(--background);
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .7px;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+}
+
+
+.gemini-results-table td {
+
+    padding: 14px;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    vertical-align: top;
+
+}
+
+
+.gemini-results-table tr:last-child td {
+
+    border-bottom: none;
+
+}
+
+
+.gemini-results-table tbody tr:hover {
+
+    background: var(--surface-hover);
+
+}
+
+
+.gemini-review-content {
+
+    min-width: 250px;
+
+    max-width: 360px;
+
+    color: var(--text) !important;
+
+    line-height: 1.55;
+
+}
+
+
+.gemini-reason {
+
+    min-width: 200px;
+
+}
+
+
+.gemini-rating {
+
+    font-weight: 800;
+
+    color: var(--warning);
+
+}
+
+
+.gemini-no-results {
+
+    padding: 40px !important;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   DOWNLOAD
+========================================================= */
+
+.gemini-download-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.gemini-download-label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.gemini-download-section h2 {
+
+    margin: 0 0 4px;
+
+}
+
+
+.gemini-download-section p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+}
+
+
+.gemini-download-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 17px;
+
+    border: none;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--primary);
+
+    color: white;
+
+    font-weight: 700;
+
+}
+
+
+.gemini-download-button:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.gemini-download-button:disabled {
+
+    opacity: .6;
+
+}
+
+
+.gemini-download-button.large {
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.gemini-results-empty {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 55vh;
+
+    text-align: center;
+
+}
+
+
+.gemini-results-empty svg {
+
+    margin-bottom: 15px;
+
+    color: var(--primary);
+
+}
+
+
+.gemini-results-empty p {
+
+    margin-top: 0;
+
+}
+
+
+.gemini-results-empty button {
+
+    padding: 11px 17px;
+
+    border: none;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--primary);
+
+    color: white;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .gemini-results-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .gemini-priority-grid,
+    .gemini-feedback-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .gemini-results-container {
+
+        width: 92%;
+
+    }
+
+
+    .gemini-results-top {
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+    }
+
+
+    .gemini-results-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gemini-sentiment-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gemini-rating-row {
+
+        grid-template-columns:
+            45px 1fr 50px;
+
+    }
+
+
+    .gemini-rating-percent {
+
+        display: none;
+
+    }
+
+
+    .gemini-filters {
+
+        flex-direction: column;
+
+    }
+
+
+    .gemini-filters select {
+
+        width: 100%;
+
+    }
+
+
+    .gemini-table-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .gemini-download-section {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .gemini-download-button.large {
+
+        width: 100%;
+
+    }
+
+}

@@ -1,0 +1,43 @@
+/* ===========================
+   Download Button
+=========================== */
+
+.download-container{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:30px;
+
+}
+
+.download-button{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px 26px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.download-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}

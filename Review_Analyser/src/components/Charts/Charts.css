@@ -1,0 +1,104 @@
+.chart-container {
+    width: 100%;
+    min-height: 250px;
+}
+
+.recharts-responsive-container{
+
+    margin:0 auto;
+
+}
+
+.recharts-wrapper{
+
+    margin:0 auto;
+
+}
+/* ===========================
+Theme Chart
+=========================== */
+
+.theme-chart-container {
+    width: 100%;
+    min-height: 360px;
+}
+/* ===========================
+Rating Overview
+=========================== */
+
+.rating-overview {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.rating-chart {
+    width: 100%;
+}
+
+.rating-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rating-breakdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.rating-breakdown-header h3 {
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.rating-breakdown-header span {
+    color: var(--text-light);
+    font-size: .85rem;
+}
+
+.rating-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 45px;
+    align-items: center;
+    gap: 12px;
+}
+
+.rating-label {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.rating-count {
+    text-align: right;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.rating-progress {
+    height: 9px;
+    background: var(--surface-hover);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.rating-progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: inherit;
+}
+
+@media (max-width: 800px) {
+
+    .rating-overview {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
+.theme-chart {
+    min-height: 320px;
+}

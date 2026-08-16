@@ -1,0 +1,20 @@
+Preprocessing.py
+
+es file ch apa sbtoh phla stopwords find kite and fir apa ohna nu remove kite
+and main thing in sentimental analysis is that not nvr no eve de words v use hunde 
+analysist apa ohna nu stop words cho remove krde aa tki apa sentences cho remove kr diye
+
+then apa duplicate values and bki values nu remove krde aa then check krde aa
+kki kehri links ne and extra spaces sb nu remove krde aa then apa words ch save krde aa
+
+
+and eh apa llm and ml wste seperate rkhde aa as llm ne t smz lena
+but the main thing is about ml osnu keywords type hi chide ne
+
+
+llm_labeller.py
+
+hr function d apna km hai
+sbtoh phla data include kita gya
+then apa prompt create kitathen jo resposne aya osnu filter out kita apne according
+

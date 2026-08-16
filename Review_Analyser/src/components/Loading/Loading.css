@@ -1,0 +1,210 @@
+/* =========================================
+   Loading Screen
+========================================= */
+
+.loading-screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    background: var(--background);
+
+    transition:
+        background var(--transition);
+
+}
+
+
+/* =========================================
+   Loading Card
+========================================= */
+
+.loading-card {
+
+    width: min(560px, 100%);
+
+    padding: 42px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+    text-align: center;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+/* =========================================
+   Header
+========================================= */
+
+.loading-card h1 {
+
+    margin-bottom: 10px;
+
+    color: var(--text);
+
+    font-size: 1.8rem;
+
+    font-weight: 800;
+
+}
+
+
+.loading-card h2 {
+
+    margin-bottom: 10px;
+
+    color: var(--primary);
+
+    font-size: 1.35rem;
+
+}
+
+
+.loading-card p {
+
+    margin-bottom: 32px;
+
+    color: var(--text-light);
+
+    font-size: .95rem;
+
+}
+
+
+/* =========================================
+   Steps
+========================================= */
+
+.loading-steps {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    text-align: left;
+
+}
+
+
+.loading-step {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 13px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    background: var(--surface-hover);
+
+    color: var(--text);
+
+    font-size: .92rem;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition);
+
+}
+
+
+.loading-step span:first-child {
+
+    width: 24px;
+
+    flex-shrink: 0;
+
+    text-align: center;
+
+    font-size: 1rem;
+
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 600px) {
+
+    .loading-screen {
+
+        padding: 20px;
+
+    }
+
+    .loading-card {
+
+        padding: 30px 22px;
+
+    }
+
+    .loading-card h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
+.loading-icon {
+
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+}
+
+.loading-icon svg {
+
+    animation: loading-spin 1.2s linear infinite;
+
+}
+
+@keyframes loading-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

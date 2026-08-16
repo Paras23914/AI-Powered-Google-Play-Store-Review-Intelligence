@@ -1,0 +1,228 @@
+/* ===========================
+   Prediction Table
+=========================== */
+
+.prediction-table-container {
+    width: 100%;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    scrollbar-width: thin;
+}
+
+
+/* ===========================
+   Table
+=========================== */
+
+.prediction-table {
+    width: 100%;
+    min-width: 900px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: var(--surface);
+}
+
+
+/* ===========================
+   Header
+=========================== */
+
+.prediction-table th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    padding: 10px 12px;
+
+    background: var(--primary);
+    color: white;
+
+    text-align: left;
+
+    font-size: 0.76rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.prediction-table th:first-child {
+    border-top-left-radius: 11px;
+}
+
+.prediction-table th:last-child {
+    border-top-right-radius: 11px;
+}
+
+
+/* ===========================
+   Column Balance
+=========================== */
+
+.prediction-table th:nth-child(1),
+.prediction-table td:nth-child(1) {
+    width: 60px;
+}
+
+.prediction-table th:nth-child(2),
+.prediction-table td:nth-child(2) {
+    width: 32%;
+}
+
+.prediction-table th:nth-child(3),
+.prediction-table td:nth-child(3),
+.prediction-table th:nth-child(5),
+.prediction-table td:nth-child(5) {
+    width: 150px;
+}
+
+.prediction-table th:nth-child(4),
+.prediction-table td:nth-child(4),
+.prediction-table th:nth-child(6),
+.prediction-table td:nth-child(6) {
+    width: 140px;
+}
+
+
+/* ===========================
+   Cells
+=========================== */
+
+.prediction-table td {
+    padding: 9px 12px;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--text);
+
+    font-size: 0.84rem;
+    line-height: 1.35;
+
+    vertical-align: middle;
+}
+
+
+/* ===========================
+   Rows
+=========================== */
+
+.prediction-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.prediction-table tbody tr:nth-child(even) {
+    background: var(--surface-hover);
+}
+
+.prediction-table tbody tr:hover {
+    background: var(--primary-soft);
+}
+
+.prediction-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ===========================
+   Rating
+=========================== */
+
+.rating-cell {
+    width: 60px;
+
+    text-align: center;
+}
+
+.rating-value {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 28px;
+    height: 28px;
+
+    border-radius: 8px;
+
+    background: var(--primary-soft);
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+
+/* ===========================
+   Review
+=========================== */
+
+.review-column {
+    min-width: 300px;
+    max-width: 420px;
+
+    color: var(--text);
+
+    line-height: 1.4;
+}
+
+
+/* ===========================
+   Theme
+=========================== */
+
+.theme-cell {
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* ===========================
+   Empty State
+=========================== */
+
+.no-predictions {
+    padding: 30px;
+
+    color: var(--text-light);
+
+    text-align: center;
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 900px) {
+
+    .prediction-table {
+        min-width: 850px;
+    }
+
+    .prediction-table th,
+    .prediction-table td {
+        padding: 8px 10px;
+    }
+
+    .prediction-table th {
+        font-size: 0.72rem;
+    }
+
+    .prediction-table td {
+        font-size: 0.8rem;
+    }
+
+    .review-column {
+        min-width: 260px;
+        max-width: 350px;
+    }
+}

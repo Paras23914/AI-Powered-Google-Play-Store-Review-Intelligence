@@ -1,0 +1,242 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Theme Variables
+=========================== */
+
+:root {
+
+    --primary: #2563EB;
+    --primary-light: #3B82F6;
+    --primary-soft: #EFF6FF;
+
+    --secondary-soft: #F3E8FF;
+    --secondary: #7C3AED;
+
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+
+
+    /* =========================
+       Light Theme
+    ========================= */
+
+    --background: #F1F5F9;
+
+    --surface: #FFFFFF;
+
+    --surface-hover: #F1F5F9;
+
+    --border: #D6E0EA;
+
+    --text: #0F172A;
+    --text-light: #52647A;
+    --muted: #8291A5;
+
+
+    /* Shadows */
+
+    --shadow-sm:
+        0 2px 8px rgba(15, 23, 42, .055);
+
+    --shadow-md:
+        0 8px 22px rgba(15, 23, 42, .075);
+
+    --shadow-lg:
+        0 18px 45px rgba(15, 23, 42, .11);
+
+
+    /* Radius */
+
+    --radius-sm: 10px;
+    --radius: 16px;
+    --radius-lg: 24px;
+
+    --transition: .25s ease;
+}
+
+
+/* ===========================
+   Dark Theme
+=========================== */
+
+[data-theme="dark"] {
+
+    --primary: #60A5FA;
+    --primary-light: #3B82F6;
+    --primary-soft: #172554;
+
+    --secondary: #A78BFA;
+    --secondary-soft: #2E1065;
+
+    --success: #4ADE80;
+    --warning: #FBBF24;
+    --danger: #F87171;
+
+    --background: #0B1120;
+
+    --surface: #111827;
+
+    --surface-hover: #1E293B;
+
+    --border: #273449;
+
+    --text: #F8FAFC;
+    --text-light: #CBD5E1;
+    --muted: #94A3B8;
+
+
+    --shadow-sm:
+        0 2px 8px rgba(0, 0, 0, .25);
+
+    --shadow-md:
+        0 8px 24px rgba(0, 0, 0, .30);
+
+    --shadow-lg:
+        0 18px 45px rgba(0, 0, 0, .40);
+}
+
+
+/* ===========================
+   Base
+=========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+    -webkit-font-smoothing: antialiased;
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+#root {
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* ===========================
+   Typography
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-light);
+}
+
+
+/* ===========================
+   Global Elements
+=========================== */
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--muted);
+}
